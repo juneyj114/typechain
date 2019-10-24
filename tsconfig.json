@@ -1,0 +1,11 @@
+// TS에게 어떻게 JS로 변환하는지 알려주면서 몇몇 옵션 추가.
+{
+    "compilerOptions": {
+        "module": "commonjs", // node.js를 평범하게 사용하고 다양한 걸 import, export하게 해준다.
+        "target": "ES2015", // 어떤 버전의 JS로 컴파일할건지 결정
+        "sourceMap": true, // scourceMap 처리 할건지 말건지 결정
+        "outDir": "dist"
+    }, 
+    "include": [ "src/**/*" ], // 컴파일 과정에서 필요한 파일들의 배열
+    "exclude": [ "node_modules" ] // 제외
+}
